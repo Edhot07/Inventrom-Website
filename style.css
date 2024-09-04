@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.linksInSmallView {
+    display: none;
+    list-style-type: none;
+}
+.linksInSmallView div {
+    margin-right: 10px;
+    font-size: 30px;
+}
+.linksInSmallView a {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: normal;
+    font-style: normal;
+}
+.Logo img {
+    max-width: 100%;
+    height: auto;
+}
+.InsideNav {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Nav-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 34px;
+    margin-right: 85px;
+}
+.Nav-ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.Nav-ul li a:hover {
+    color: black;
+}
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+}
+/* Background image section */
+.background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://inventrom.com/images/background-layer.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.textInBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 9px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 4.5rem;
+    width: 70%;
+    height: 50vh;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.textInBackground a{
+    letter-spacing: normal;
+    text-decoration: none;
+    margin-top: 6px;
+    color: white;
+    font-size: medium;
+}
+.textInBackground a:hover {
+    color: black;
+}
+/* About section */
+#aboutSection {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    align-items: center;
+    gap: 35px;
+}
+h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(34, 90, 23);
+    letter-spacing: 2px;
+}
+#aboutSection span {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(99, 99, 99);
+    margin-top: -6px;
+    text-align: center;
+}
+.Vision-Mission {
+    display: flex;
+    justify-content: center;
+    width: 83%;
+}
+.Vision-Mission img {
+    height: 300px;
+    width: 400px;
+}
+.Mission,
+.Vision {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 15px;
+}
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+}
+/* Awards section */
+#awardSection {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+.awards {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(34, 90, 23);
+    padding-top: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.certificates {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.certificates img {
+    height: 150px;
+    width: 220px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    height: 0.5px;
+    width: 60px;
+    background-color: rgb(99, 99, 99);
+}
+.item span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgb(128, 128, 128);
+}
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+/* Get in Touch section */
+#getInTouch {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+.inTouch {
+    text-align: center;
+    padding: 10px;
+}
+#form-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form {
+    /* width: 100%;
+    max-width: 400px; */
+    width: 32%;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+}
+.contact img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.RegisteredAddress {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+    line-height: 20px;
+}
+.location {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    grid-gap: 10px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(99, 99, 99);
+}
+.contact2 {
+    grid-column: 1 / span 2;
+}
+.Footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(14, 94, 14);
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+}
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.Footer img {
+    height: 20px;
+    width: 20px;
+}
+.Footer span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+/* Responsive design */
+@media only screen and (min-width: 801px) and (max-width: 1246px) {
+    .background-image{
+        width: 100%;
+    }
+    .Vision-Mission{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Vision-Mission img{
+        height: 200px;
+        width: 300px;
+    }
+}
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
+    .Nav-ul {
+        display: none;
+    }
+
+    .InsideNav {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linksInSmallView.active {
+       
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .linksInSmallView div{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .background-image {
+        height: 60vh;
+    }
+    .Nav-ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+    .textInBackground {
+        width: 100%;
+        font-size: medium;
+    }
+    #aboutSection {
+        height: 100vh;
+    }
+    .Vision-Mission {
+        flex-direction: column;
+        width: 50%;
+    }
+    .Vision-Mission img {
+        height: 150px;
+        width: 220px;
+    }
+    #awardSection {
+        height: 1000px;
+    }
+    .Mission,.Vision {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .certificates {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .certificates img {
+        height: 150px;
+        width: 220px;
+    }
+    #form-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form,
+    .contact {
+        width: 100%;
+        max-width: 100%;
+    }
+    .location {
+        grid-template-columns: 1fr 10fr;
+    }
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .background-image {
+        height: 50vh;
+    }
+
+    .textInBackground {
+        align-items: center;
+        justify-content: center;
+        line-height: 1.5rem;
+        font-size: xx-small;
+    }
+    .Vision-Mission {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Vision-Mission img{
+        height: 70px;
+        width: 144px;
+    }
+    #aboutSection {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 652px;
+        gap: 35px;
+    }
+}
